@@ -5,6 +5,7 @@ import { createPinia } from 'pinia'
 import Counter from './components/tugas2/Counter.vue'
 import { createRouter , createWebHistory } from 'vue-router'
 import Counter3 from './components/tugas3/Counter.vue'
+import MultipleCounter from './components/tugas4/MultipleCounter.vue'
 
 // store management with Pinia
 const pinia = createPinia()
@@ -18,7 +19,11 @@ const router = createRouter({
         {
             path: '/counter-tugas3',
             component: Counter3
-        }
+        },
+        {
+            path: '/counter-tugas4',
+            component: MultipleCounter
+        },
     ],
 
     // untuk membuat history mode
