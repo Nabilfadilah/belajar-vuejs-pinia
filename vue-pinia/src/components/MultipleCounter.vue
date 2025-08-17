@@ -1,5 +1,5 @@
 <script setup>
-import Counter from '../tugas3/Counter.vue'
+import Counter from './tugas3/Counter.vue';
 
 </script>
 

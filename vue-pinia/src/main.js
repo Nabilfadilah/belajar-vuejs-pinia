@@ -5,7 +5,7 @@ import { createPinia } from 'pinia'
 import Counter from './components/tugas2/Counter.vue'
 import { createRouter , createWebHistory } from 'vue-router'
 import Counter3 from './components/tugas3/Counter.vue'
-import MultipleCounter from './components/tugas4/MultipleCounter.vue'
+import MultipleCounter from './components/MultipleCounter.vue'
 
 // store management with Pinia
 const pinia = createPinia()
