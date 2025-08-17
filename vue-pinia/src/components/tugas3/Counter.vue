@@ -20,6 +20,12 @@ counter.$onAction((action) => {
     console.log(action);
 })
 
+// fungsi untuk log nilai doubled
+// ini akan dipanggil setiap kali nilai doubled berubah
+function logDoubled() {
+  console.log(counter.doubled);
+}
+
 </script>
 
 <template>
@@ -30,6 +36,7 @@ counter.$onAction((action) => {
     <div class="reset-button">
         <button @click="counter.reset">Reset</button>
     </div>
+    <button @click="logDoubled">Log Double</button>
   </div>
 </template>
 
@@ -41,6 +48,16 @@ counter.$onAction((action) => {
     align-items: center;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 </style>
