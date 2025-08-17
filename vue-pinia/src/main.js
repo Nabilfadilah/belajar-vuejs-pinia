@@ -4,6 +4,7 @@ import App from './App.vue'
 import { createPinia } from 'pinia'
 import Counter from './components/tugas2/Counter.vue'
 import { createRouter , createWebHistory } from 'vue-router'
+import Counter3 from './components/tugas3/Counter.vue'
 
 // store management with Pinia
 const pinia = createPinia()
@@ -13,6 +14,10 @@ const router = createRouter({
         {
             path: '/counter',
             component: Counter
+        },
+        {
+            path: '/counter-tugas3',
+            component: Counter3
         }
     ],
 
